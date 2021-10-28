@@ -14,4 +14,15 @@ public class RegexValidations {
             System.out.println("InValid");
         }
     }
+
+    public void lastName(String lastName) {
+        regex = "^[A-Z]{1}[a-z]{2,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(lastName);
+        if (matcher.matches()) {
+            System.out.println("Valid");
+        } else {
+            System.out.println("InValid");
+        }
+    }
 }
