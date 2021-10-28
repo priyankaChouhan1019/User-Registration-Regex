@@ -29,7 +29,7 @@ public class RegexUserMain {
                 case 5 :
                     regexUserRegistration.userPassword();
                     break;
-                case 5 :
+                case 6 :
                     System.exit(0);
                     break;
                 default :
