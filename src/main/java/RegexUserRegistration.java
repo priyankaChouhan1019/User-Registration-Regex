@@ -21,4 +21,10 @@ public class RegexUserRegistration {
         String emailId = scanner.next();
         regexValidations.emailId(emailId);
     }
+
+    public void userMobileNumber() {
+        System.out.println("Enter your MobileNumber");
+        String mobileNumber = scanner.next();
+        regexValidations.mobileNumber(mobileNumber);
+    }
 }
