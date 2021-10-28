@@ -7,17 +7,21 @@ public class RegexUserMain {
     public void choice() {
         while (true) {
             System.out.println("Enter 1 To Check First Name\n"
-                    + "Enter 1 To Check Second Name\n"
-                    + "Enter 2 To Exit");
+                    + "Enter 2 To Check Second Name\n"
+                    + "Enter 3 To Check EmailId\n"
+                    + "Enter 4 To Exit");
             int choice = scanner.nextInt();
             switch (choice) {
                 case 1 :
                     regexUserRegistration.userFirstName();
                     break;
-                case 3 :
+                case 2 :
                     regexUserRegistration.userLastName();
                     break;
-                case 2:
+                case 3 :
+                    regexUserRegistration.userEmailId();
+                    break;
+                case 4 :
                     System.exit(0);
                     break;
                 default :

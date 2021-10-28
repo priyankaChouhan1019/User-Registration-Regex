@@ -15,4 +15,10 @@ public class RegexUserRegistration {
         String lastName = scanner.next();
         regexValidations.lastName(lastName);
     }
+
+    public void userEmailId() {
+        System.out.println("Enter Your EmailId : ");
+        String emailId = scanner.next();
+        regexValidations.emailId(emailId);
+    }
 }
