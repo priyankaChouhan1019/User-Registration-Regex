@@ -27,4 +27,9 @@ public class RegexUserRegistration {
         String mobileNumber = scanner.next();
         regexValidations.mobileNumber(mobileNumber);
     }
+    public void userPassword() {
+        System.out.println("Enter your MobileNumber");
+        String password = scanner.next();
+        regexValidations.password(password);
+    }
 }
