@@ -49,7 +49,7 @@ public class RegexValidations {
     }
 
     public void password(String password) {
-        regex = "^[a-z](?=.*[A-Z]).{8,}$";
+        regex = "^[a-z](?=.*[A-Z]+)(?=.*[0-9]+).{8,}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(password);
         if (matcher.matches()) {
